@@ -26,7 +26,7 @@ const path = {
   watch: {
     js: `${srcFolder}/js/**/*.js`,
     images: `${srcFolder}/img/**/*.{jpg,jpeg,png,svg,ico,gif,webp}`,
-    scss: `${srcFolder}/scss/**/*.scss`,
+    scss: `${srcFolder}/scss/**/*.{scss,css}`,
     html: `${srcFolder}/**/*.html`,
     files: `${srcFolder}/assets/**/*.*`,
   },
