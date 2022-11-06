@@ -31,7 +31,7 @@ import {zip} from "./gulp/tasks/zip.js";
 const watcher = () => {
   gulp.watch(path.watch.files, copy);
   gulp.watch(path.watch.html, gulp.series(gulp.parallel(html, scss, tailwind),mergeStyles));
-  gulp.watch(path.watch.scss, gulp.series(gulp.parallel(html, scss),mergeStyles));
+  gulp.watch(path.watch.scss, gulp.series(gulp.parallel(tailwind, scss),mergeStyles));
   gulp.watch(path.watch.js, js);
   gulp.watch(path.watch.images, images);
 };
