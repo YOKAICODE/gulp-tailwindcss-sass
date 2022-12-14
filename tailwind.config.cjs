@@ -1,4 +1,5 @@
 module.exports = {
+  prefix: "tw-",
   content: ["./src/**/*.{html,js}"],
   corePlugins: {
     preflight: false,
